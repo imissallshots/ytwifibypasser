@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<style>
+   label {
+    display: block;
+    text-align: center;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: auto;
+    padding: 10px;
+}
+
+input {
+    margin: auto;
+  display: block;
+}
+button {
+    margin: 0.5cm;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5cm;
+  display: block;
+}
+
+
+</style>
+<body>
+    <iframe id="theiframe" type="text/html" width="1890" height="920"
+  src="https://google.com"
+  frameborder="0" style="position: absolute;width:0;height:0;border:0;"></iframe>
+    <div>
+    <label for="name">Enter the YouTube Video URL</label>
+
+    <input type="text" id="name" name="name" required
+       size="38">
+    <button onclick="getValueInput()">Play</button>
+</div>
+    
+</body>
+</html>
