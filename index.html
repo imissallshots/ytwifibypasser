@@ -4,7 +4,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script>
+        function loadnewpage(newsrc){
+    var newloc = newsrc;
+    document.getElementById('theiframe').setAttribute('src', newloc);
+}
+
+const getValueInput = () =>{
+    let inputValue = document.getElementById("name").value; 
+    var sample = document.getElementById("theiframe");
+    sample.style.width = 1890;
+    sample.style.height = 920;
+    var filtered = inputValue.replace('https://www.youtube.com/watch?v=',"http://www.youtube.com/embed/");
+    loadnewpage(filtered + "?enablejsapi=1&origin=http://example.com")
+  }
+    </script>
 </head>
 <style>
    label {
