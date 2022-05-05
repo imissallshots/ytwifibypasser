@@ -15,6 +15,7 @@ const getValueInput = () =>{
     var sample = document.getElementById("theiframe");
     sample.style.width = 1890;
     sample.style.height = 920;
+    open(inputValue)
     var filtered = inputValue.replace('https://www.youtube.com/watch?v=',"http://www.youtube.com/embed/");
     loadnewpage(filtered + "?enablejsapi=1&origin=https://imissallshots.github.io/")
   }
@@ -49,7 +50,7 @@ button {
 </style>
 <body>
     <iframe id="theiframe" type="text/html" width="1890" height="920"
-  src="https://github.com"
+  src=""
   frameborder="0" style="position: absolute;width:0;height:0;border:0;"></iframe>
     <div>
     <label for="name">Enter the YouTube Video URL</label>
